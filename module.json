@@ -11,7 +11,7 @@
   "styles": [],
   "packs": [],
   "system": "pf2e",
-  "url": "https://github.com/The-Dominomicon/auto-npc-hp-modifier",
-  "manifest": "https://raw.githubusercontent.com/The-Dominomicon/auto-npc-hp-modifier/main/module.json",
-  "download": "https://github.com/The-Dominomicon/auto-npc-hp-modifier/archive/refs/heads/main.zip"
+  "url": "https://github.com/The-Dominomicon/Auto-NPC-HP-Modifier-for-PF2e",
+  "manifest": "https://raw.githubusercontent.com/The-Dominomicon/Auto-NPC-HP-Modifier-for-PF2e/main/module.json",
+  "download": "https://github.com/The-Dominomicon/Auto-NPC-HP-Modifier-for-PF2e/archive/refs/heads/main.zip"
 }
