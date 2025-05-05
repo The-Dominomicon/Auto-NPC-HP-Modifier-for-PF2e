@@ -10,7 +10,7 @@ This module automatically applies slight, randomized HP adjustments to NPC token
 
 When you drop an NPC onto the scene, the module will:
 - Determine their level (minimum 1, even for level -1/0 creatures),
-- Roll a **random number between -X × level and +X × level**, where X is a configurable multiplier (default: 2),
+- Roll a **random number between -X × level and +X × level**, where X is a configurable multiplier (default: ×2),
 - Modify the token’s **max HP and current HP** by that amount,
 - Always set the creature to **full health** after the adjustment.
 
@@ -20,14 +20,21 @@ The result: Some NPCs are a bit beefier, others are more fragile. This creates s
 
 ## ⚙️ Configuration
 
-You can set the HP variance multiplier via:
+You can adjust the module behavior via:
 
 > ⚙️ Settings → Configure Settings → Module Settings → Auto NPC HP Modifier
 
-Options range from:
-- ×1 (Low variance)
-- ×2 (Default)
-- ×3–×5 (Higher variance)
+### Available Settings
+
+#### 🔢 HP Variance Multiplier
+- Choose from ×1 through ×10
+- This controls how much HP can vary by level
+- **Default is ×2**
+
+#### 🔄 HP Adjustment Mode
+- `Increase and Decrease (default)` – Random HP goes up or down
+- `Only Increase HP` – HP can only increase
+- `Only Decrease HP` – HP can only decrease
 
 ---
 
@@ -45,7 +52,6 @@ To install the module, paste this URL into Foundry's **“Install Module via Man
 
 ```
 https://raw.githubusercontent.com/The-Dominomicon/Auto-NPC-HP-Modifier-for-PF2e/main/module.json
-
 ```
 
 ---
@@ -60,9 +66,10 @@ Sci-fi / fantasy Pathfinder 2e content, guides, and actual play.
 
 ## 🛠 Tech Stuff
 
-- Changes are applied directly to each Token’s embedded actor data using `createToken` hook.
-- Compatible with Weak/Elite templates.
-- Works even if the NPC prototype actor was saved with damaged HP.
+- Changes are applied directly to each Token’s embedded actor data using `createToken` hook
+- Uses a 100ms delay to ensure token initialization doesn’t overwrite changes
+- Compatible with Weak/Elite templates
+- Works even if the NPC prototype actor was saved with damaged HP
 
 ---
 
