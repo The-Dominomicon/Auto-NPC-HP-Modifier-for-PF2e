@@ -44,7 +44,8 @@ It uses the system’s level field and actor data format, and will not behave co
 To install the module, paste this URL into Foundry's **“Install Module via Manifest URL”**:
 
 ```
-https://raw.githubusercontent.com/The-Dominomicon/auto-npc-hp-modifier-for-pf2e/main/module.json
+https://raw.githubusercontent.com/The-Dominomicon/Auto-NPC-HP-Modifier-for-PF2e/main/module.json
+
 ```
 
 ---
