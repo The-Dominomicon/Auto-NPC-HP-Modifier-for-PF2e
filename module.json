@@ -1,0 +1,14 @@
+{
+  "name": "auto-npc-hp-modifier",
+  "title": "Auto NPC HP Modifier",
+  "description": "Randomly adjusts HP of NPCs based on level when they are placed.",
+  "version": "1.1.0",
+  "minimumCoreVersion": "10",
+  "compatibleCoreVersion": "11",
+  "author": "Dominic & Luna",
+  "scripts": ["auto-hp.js"],
+  "esmodules": [],
+  "styles": [],
+  "packs": [],
+  "system": "pf2e"
+}
